@@ -34,7 +34,7 @@ git clone https://github.com/vstharani8/gitlab.git
 * Setup the volume location for the Data and Logs
 
   1. Create the directory where you want to store the data for the GitLab.
-  2. Configure a new environment variable $GITLAB_HOME pointint to the directory
+  2. Configure a new environment variable $GITLAB_HOME pointing to the directory
       ```
       export GITLAB_HOME=/opt/gitlab
       ```
@@ -52,4 +52,30 @@ git clone https://github.com/vstharani8/gitlab.git
     ```
 * When you log in to GitLab first time, will ask to set the admin password. After you change, you can login with your username (root) and password
 
+### 2. Install the GitLab service (HTTPS)
 
+* Clone the repo and setup the volume location as the above mentioned
+
+* For this installation, we need to have a domain name and certifiactes before proceeding. Once have, do the below steps.
+
+    1.	Change the domain name in the /HTTPS/docker-compose.yml file.
+    2.	Create the SSL directory in the $GITHUB_HOME as per the below
+
+        ```
+        mkdir $GITLAB_HOME/config/ssl
+        ```
+    3.  Copy your certificate and key files to the ssl folder
+
+* Run the docker-compose command to install the GitLab service from the HTTPS directory
+    ```
+    docker-compose up -d
+    ```
+*  The initialization process will take time and you can track the progress with the below command
+    ```
+     docker logs -f container_name
+    ```
+* After that, browse the web page using your domain name
+    ```
+     https://domain_name
+    ```
+* When you log in to GitLab first time, will ask to set the admin password. After you change, you can login with your username (root) and password
