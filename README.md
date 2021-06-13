@@ -38,7 +38,7 @@ git clone https://github.com/vstharani8/gitlab.git
       ```
       export GITLAB_HOME=/opt/gitlab
       ```
-* Go to that folder where you clone the repo. Run the below command to install the GitLab service as a container
+* Go to that folder where you clone the repo. Make sure docker-compose.yml file exists in the folder and run the below command to install the GitLab service as a container.
     ```
     docker-compose up -d
     ```
