@@ -64,7 +64,8 @@ git clone https://github.com/vstharani8/gitlab.git
         ```
         mkdir $GITLAB_HOME/config/ssl
         ```
-    3.  Copy your certificate and key files to the ssl folder
+    3.  Copy your certificate and key files to the ssl folder (Eg. gitlab.example.com.crt, gitlab.example.com.key). 
+    4.  It should be with your domain name
 
 * Run the docker-compose command to install the GitLab service from the HTTPS directory
     ```
