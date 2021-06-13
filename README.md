@@ -38,6 +38,7 @@ git clone https://github.com/vstharani8/gitlab.git
       ```
       export GITLAB_HOME=/opt/gitlab
       ```
+  3. If you don't want to use environment variable, replace the $GITLAB_HOME with your directory in the docker-compose.yml (volumes) (Eg:  '/opt/gitlab/config:/etc/gitlab')
 * Go to that folder where you clone the repo. Make sure docker-compose.yml file exists in the folder and run the below command to install the GitLab service as a container.
     ```
     docker-compose up -d
