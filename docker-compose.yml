@@ -1,0 +1,11 @@
+web:
+  image: 'gitlab/gitlab-ee:latest'
+  restart: always
+  ports:
+    - '80:80'
+    - '443:443'
+    - '23:22'
+  volumes:
+    -  '$GITLAB_HOME/config:/etc/gitlab'
+    -  '$GITLAB_HOME/logs:/var/log/gitlab'
+    -  '$GITLAB_HOME/data:/var/opt/gitlab'
