@@ -1,5 +1,9 @@
 # Install Gitlab Service
 
+Architecture:
+
+![image info](./images/Architecture.jpg)
+
 Prerequistes:
 
 * Docker
