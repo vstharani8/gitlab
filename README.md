@@ -1,15 +1,30 @@
-# Install Gitlab Service
+# **Install Gitlab Service**
 
-Architecture:
+## **Architecture**
 
-![image info](./images/Architecture.jpg)
+![diagram](./images/Architecture.jpg)
 
-Prerequistes:
+This is the simple architecture to install the GitLab Service using the Docker engine as per the below.
+  * In the Linux Virtual machine, installed a Docker engine to create the containers. 
+  * Pulling the GitLab Image from the docker registry. 
+  * Creating the persistent volumes using the host volume. 
+
+
+## **Prerequistes**
 
 * Docker
 * Docker Compose
 
-Installation:
+## **Installation**
+
+### **Installation Method**
+
+we can install the GitLab service in two different ways based on the requirement.
+1.	Install the GitLab service (HTTP) – Only for Testing
+2.	Install the GitLab service (HTTPS) - Production
+
+### 1. Install the GitLab service (HTTP) 
+
 
 * Clone the repo in your machine.
 
