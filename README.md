@@ -58,7 +58,7 @@ git clone https://github.com/vstharani8/gitlab.git
 
 * For this installation, we need to have a domain name and certifiactes before proceeding. Once have, do the below steps.
 
-    1.	Change the domain name in the /HTTPS/docker-compose.yml file.
+    1.	Change the domain name in the /HTTPS/docker-compose.yml file. (Eg. gitlab.example.com)
     2.	Create the SSL directory in the $GITHUB_HOME as per the below
 
         ```
