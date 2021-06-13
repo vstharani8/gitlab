@@ -42,6 +42,10 @@ git clone https://github.com/vstharani8/gitlab.git
     ```
     docker-compose up -d
     ```
+* Check the container status using the below command
+    ```
+    docker-compose ps 
+    ```
 * The initialization process will take time and you can track the progress with the below command
     ```
      docker logs -f container_name
