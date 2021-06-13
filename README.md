@@ -57,6 +57,8 @@ git clone https://github.com/vstharani8/gitlab.git
     ```
 * When you log in to GitLab first time, will ask to set the admin password. After you change, you can login with your username (root) and password
 
+![diagram](./images/GitLab_Page.jpg)
+
 ### 2. Install the GitLab service (HTTPS)
 
 * Clone the repo and setup the volume location as the above mentioned
